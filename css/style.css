@@ -7,13 +7,13 @@
 }
 
 body {
-    font-family: "Figtree", sans-serif;
+    font-family: "Figtree", serif;
     background-color: hsl(47, 88%, 63%);
 }
 
 .container {
     background-color: white;
-    padding: 10px;
+    padding: 13px;
     border: 1px solid black;
     width: 250px;
 
@@ -38,7 +38,7 @@ body {
 }
 
 .border {
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .category {
@@ -50,17 +50,12 @@ body {
     justify-content: center;
 }
 
-.category p {
-    font-size: 0.7rem;
-    font-weight: bolder;
-}
-
 .date {
     font-size: 0.7rem;
 }
 
 .summary {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     color: hsl(0, 0%, 42%);
 }
 
@@ -69,7 +64,41 @@ body {
     align-items: center;
 }
 
+
 .profile-picture img {
-    width: 30px;
+    width: 20px;
     height: auto;
+}
+
+.profile-picture figcaption {
+    margin-left: 7px;
+    font-size: 0.7rem;
+}
+
+.text div,
+.text p,
+.text h1,
+.profile-picture {
+    margin-top: 12px;
+}
+
+.category p {
+    font-size: 0.7rem;
+    margin-top: 0;
+}
+
+.summary,
+.date {
+    font-weight: 500;
+}
+
+h1,
+.category,
+.profile-picture,
+figcaption .date {
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 1rem;
 }
