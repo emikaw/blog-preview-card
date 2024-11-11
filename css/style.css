@@ -15,7 +15,8 @@ body {
     background-color: white;
     padding: 15px;
     border: 1px solid black;
-    width: 250px;
+    min-width: 275px;
+    max-width: 300px;
     border-radius: 13px;
 
     position: absolute;
@@ -39,6 +40,10 @@ body {
     /* i don't know if i need this */
 }
 
+.text {
+    margin-top: 15px;
+}
+
 .category {
     background-color: hsl(47, 88%, 63%);
     border-radius: 3px;
@@ -48,14 +53,11 @@ body {
     justify-content: center;
 }
 
-.date {
-    font-size: 0.6rem;
-}
-
 .summary {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: hsl(0, 0%, 42%);
     line-height: 1.5;
+    min-width: 252px;
 }
 
 .profile-picture {
@@ -71,7 +73,6 @@ body {
 
 .profile-picture figcaption {
     margin-left: 7px;
-    font-size: 0.6rem;
 }
 
 .text div,
@@ -86,7 +87,6 @@ body {
 }
 
 .category p {
-    font-size: 0.6rem;
     margin-top: 0;
 }
 
@@ -103,10 +103,23 @@ figcaption .date {
 }
 
 h1 {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
-.text {
-    margin-top: 15px;
-    margin-right: 7px;
+.date,
+.profile-picture figcaption,
+.category p {
+    font-size: 0.7rem;
+}
+
+a,
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
 }
